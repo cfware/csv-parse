@@ -1,0 +1,5 @@
+*.tgz
+.github
+nyc.config.js
+coverage
+test.js
