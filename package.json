@@ -26,7 +26,7 @@
 	"homepage": "https://github.com/cfware/csv-parse#readme",
 	"dependencies": {},
 	"devDependencies": {
-		"@cfware/lint": "^1.4.3",
+		"@cfware/lint": "^2.0.2",
 		"@cfware/nyc": "^0.7.0",
 		"@istanbuljs/esm-loader-hook": "^0.1.2",
 		"libtap": "^0.3.0",
