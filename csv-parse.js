@@ -1,4 +1,4 @@
-export default function parse(string, maxRows = Infinity) {
+export default (string, maxRows = Infinity) => {
 	let inQuote = false;
 	let field = '';
 	let row = [];
@@ -44,4 +44,4 @@ export default function parse(string, maxRows = Infinity) {
 	result.push(row);
 
 	return result;
-}
+};
