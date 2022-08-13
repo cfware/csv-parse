@@ -8,16 +8,16 @@ export default (string, maxRows = Infinity) => {
 		...string.replace(/(?:\r\n|\n|\r)$/u, '')
 	];
 
-	for (let i = 0; i < charArray.length; i++) {
-		const current = charArray[i];
-		const next = charArray[i + 1];
+	for (let index = 0; index < charArray.length; index++) {
+		const current = charArray[index];
+		const next = charArray[index + 1];
 		if (!inQuote && ',\r\n'.includes(current)) {
 			row.push(field);
 			field = '';
 
 			if (current !== ',') {
 				if (current + next === '\r\n') {
-					i++;
+					index++;
 				}
 
 				result.push(row);
@@ -33,7 +33,7 @@ export default (string, maxRows = Infinity) => {
 			inQuote = true;
 		} else if (next === '"') {
 			field += '"';
-			i++;
+			index++;
 		} else {
 			inQuote = false;
 		}
