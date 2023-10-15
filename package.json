@@ -1,35 +1,35 @@
 {
-	"name": "@cfware/csv-parse",
-	"version": "0.1.1",
-	"description": "Tiny CSV string parser",
-	"type": "module",
-	"main": "csv-parse.js",
-	"exports": "./csv-parse.js",
-	"scripts": {
-		"pretest": "cfware-lint .",
-		"tests-only": "nyc -s node --experimental-loader=@istanbuljs/esm-loader-hook test.js",
-		"test": "npm run -s tests-only",
-		"posttest": "nyc report --check-coverage"
-	},
-	"engines": {
-		"node": ">=16.12.0"
-	},
-	"author": "Corey Farrell",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cfware/csv-parse.git"
-	},
-	"bugs": {
-		"url": "https://github.com/cfware/csv-parse/issues"
-	},
-	"homepage": "https://github.com/cfware/csv-parse#readme",
-	"dependencies": {},
-	"devDependencies": {
-		"@cfware/lint": "^3.0.4",
-		"@cfware/nyc": "^0.7.1",
-		"@istanbuljs/esm-loader-hook": "^0.2.0",
-		"libtap": "^1.4.0",
-		"nyc": "^15.1.0"
-	}
+    "name": "@cfware/csv-parse",
+    "version": "0.1.1",
+    "description": "Tiny CSV string parser",
+    "type": "module",
+    "main": "csv-parse.js",
+    "exports": "./csv-parse.js",
+    "scripts": {
+        "pretest": "cfware-lint .",
+        "tests-only": "nyc -s node --experimental-loader=@istanbuljs/esm-loader-hook test.js",
+        "test": "npm run -s tests-only",
+        "posttest": "nyc report --check-coverage"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "author": "Corey Farrell",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cfware/csv-parse.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cfware/csv-parse/issues"
+    },
+    "homepage": "https://github.com/cfware/csv-parse#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@cfware/lint": "^4",
+        "@cfware/nyc": "^1",
+        "@istanbuljs/esm-loader-hook": "^0.2",
+        "libtap": "^1",
+        "nyc": "^15"
+    }
 }

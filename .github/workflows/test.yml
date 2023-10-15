@@ -8,11 +8,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 18
     - run: npm install
     - name: Lint
       run: npm run -s pretest
